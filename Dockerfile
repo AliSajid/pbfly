@@ -25,4 +25,4 @@ COPY pbfly_public .
 EXPOSE 8080
 
 # Start Pocketbase
-CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=pblfy_data", "--publicDir=pbfly_public"]
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pbfly/pbfly_data", "--publicDir=/pbfly/pbfly_public"]
