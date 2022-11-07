@@ -19,8 +19,10 @@ WORKDIR /pbfly
 # Set the output port
 ENV PORT=8080
 
+COPY pbfly_public .
+
 # Expose the output port
 EXPOSE 8080
 
 # Start Pocketbase
-CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080"]
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=pblfy_data", "--publicDir=pbfly_public"]
