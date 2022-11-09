@@ -13,8 +13,8 @@
 
         <script src="assets/js/pocketbase.umd.js"></script>
         <script type="text/javascript">
-            const client = new PocketBase("http://127.0.0.1:8080");
-            const redirectUrl = "http://127.0.0.1:8080/redirect.html";
+            const client = new PocketBase("https://pbfly.fly.dev:8080");
+            const redirectUrl = "https://pbfly.fly.dev:8080/redirect.html";
 
             async function loadLinks() {
                 const authMethods = await client.users.listAuthMethods();
