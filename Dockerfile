@@ -19,7 +19,7 @@ WORKDIR /pbfly
 # Set the output port
 ENV PORT=8080
 
-COPY pbfly_public .
+COPY pbfly_public pbfly_public
 
 # Expose the output port
 EXPOSE 8080
