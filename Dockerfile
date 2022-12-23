@@ -2,7 +2,7 @@
 FROM alpine:3.16.2
 
 # Set the required version of Pocketbase as an argument
-ARG PB_VERSION=0.8.0
+ARG PB_VERSION=0.10.3
 
 # Install required packages
 RUN apk add --no-cache \
